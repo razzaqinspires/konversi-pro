@@ -10,7 +10,8 @@
   "scripts": {
     "dev:web": "vite",
     "build:web": "vite build",
-    "test": "node test/run-tests.js"
+    "test": "node test/run-tests.js",
+    "release": "git add . && git commit -m \"chore: release new version\" && git push origin main && npm version patch && npm publish --access public"
   },
   "dependencies": {
     "commander": "^11.0.0",
