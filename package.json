@@ -1,0 +1,34 @@
+{
+  "name": "konversi-pro",
+  "version": "2.0.0",
+  "description": "Konversi file TXT → CSV kompatibel dengan Bitwarden, Google, LastPass, KeePass, dll. + Web UI React.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "konversi-pro": "bin/cli.js"
+  },
+  "scripts": {
+    "dev:web": "vite",
+    "build:web": "vite build",
+    "test": "node test/run-tests.js"
+  },
+  "dependencies": {
+    "papaparse": "^5.4.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  },
+  "keywords": [
+    "csv",
+    "bitwarden",
+    "password-export",
+    "google-passwords",
+    "lastpass",
+    "keepass",
+    "npm-library"
+  ],
+  "author": "Arifi Razzaq",
+  "license": "MIT"
+}
