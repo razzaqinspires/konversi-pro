@@ -1,9 +1,9 @@
 export default {
   name: "google-passwords",
-  mapFields: entry => ({
-    name: entry.name || "",
-    url: entry.url || "",
-    username: entry.username || "",
-    password: entry.password || ""
-  })
+  map: (entry) => ({
+    name: entry.SISTEM || "",
+    url: entry.KOORDINAT || "",
+    username: entry.ID_AKSES || "",
+    password: entry.KUNCI_AUTENTIKASI || "",
+  }),
 };
