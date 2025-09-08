@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import { readFileSync, writeFileSync } from "fs";
 import path from "path";
 import { parseTextToJSON, convertToCSV } from "../src/core/parser.js";
