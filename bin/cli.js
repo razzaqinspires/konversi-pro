@@ -23,5 +23,5 @@ try {
   writeFileSync(outputFile, csv);
   console.log(`✅ Berhasil dikonversi (${data.length} baris) → ${outputFile}`);
 } catch (err) {
-  console.error("❌ Error:", err.message);
+  console.error(`❌ Error: ${err.message}:`, err.stack);
 }
