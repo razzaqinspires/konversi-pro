@@ -6,6 +6,8 @@ import lastpass from "./templates/lastpass.js";
 import onepassword from "./templates/onepassword.js";
 import keepass from "./templates/keepass.js";
 
+import { parseTextToJSON, convertToCSV } from "./core/parser.js";
+
 const templates = {
   default: defaultTemplate,
   bitwarden,
@@ -13,12 +15,11 @@ const templates = {
   "google-contacts": googleContacts,
   lastpass,
   onepassword,
-  keepass
+  keepass,
 };
 
 export function getTemplate(name) {
   return templates[name] || templates.default;
 }
 
-export { parseTextToJSON, convertToCSV } from "./core/parser.js";
-export { default as ConverterApp } from "./web/ConverterApp.jsx";
+export { parseTextToJSON, convertToCSV };
